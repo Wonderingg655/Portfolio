@@ -1,3 +1,4 @@
+
 const vid = document.getElementById("vid");
 vid.addEventListener("timeupdate", function () {
     if (this.currentTime >= 59.47) {
