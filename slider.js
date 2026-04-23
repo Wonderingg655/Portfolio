@@ -1,9 +1,3 @@
-function load(a) {
-    document.getElementById("popinfo").innerHTML = '<object class="objpop" type="text/html" data="' + a + '.html" ></object>';
-}
-
-window.onload = function () { load() }
-
 let slideIndex = 1;
 showSlides(slideIndex);
 

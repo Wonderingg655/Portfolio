@@ -5,8 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Pollawit</title>
-    
+
     <link rel="stylesheet" href="wstyle.css">
+    <script>
+        function load(a) {
+            document.getElementById("popinfo").innerHTML = '<object class="objpop" type="text/html" data="' + a + '.html" ></object>';
+        }
+
+        window.onload = function () { load() }
+    </script>
+
     <script src="slider.js"></script>
 </head>
 
