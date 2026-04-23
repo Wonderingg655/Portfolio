@@ -7,12 +7,10 @@
     <title>Portfolio Pollawit</title>
 
     <link rel="stylesheet" href="wstyle.css">
-    <link rel="stylesheet" href="slidestyle.css">
     <script>
         function load(a) {
-            document.getElementById("popinfo").innerHTML = '<object class="objpop" type="text/html" data="' + a + '.html" ></object>';
+            document.getElementById("popinfo").innerHTML = '<iframe class="objpop" frameBorder="0" src="' + a + '.html" title="description"></iframe>';
         }
-
         window.onload = function () { load() }
     </script>
 
