@@ -1,10 +1,20 @@
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        const loader = document.getElementById('loader');
+        if (loader) {
+            loader.classList.add('fade-out');
+        }
+    }, 1000);
+});
 
 const vid = document.getElementById("vid");
-vid.addEventListener("timeupdate", function () {
-    if (this.currentTime >= 59.47) {
-        this.currentTime = 0.0;
-    }
-});
+if (vid) {
+    vid.addEventListener("timeupdate", function () {
+        if (this.currentTime >= 59.47) {
+            this.currentTime = 0.0;
+        }
+    });
+}
 
 const popbg = document.getElementById('popbg');
 function hidepopbg() {
