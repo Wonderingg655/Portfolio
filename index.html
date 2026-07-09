@@ -7,14 +7,6 @@
     <title>Portfolio Pollawit</title>
 
     <link rel="stylesheet" href="wstyle.css">
-    <link rel="stylesheet" href="slidestyle.css">
-    <script>
-        function load(a) {
-            document.getElementById("popinfo").innerHTML = '<iframe class="objpop" frameBorder="0" src="' + a + '.html" title="description"></iframe>';
-        }
-
-        window.onload = function () { load() }
-    </script>
 </head>
 
 <body style="background-color: #e7e7e7;">
@@ -29,27 +21,18 @@
     <div class="overlay">
     </div>
 
-    <div class="popbg pophide" id="popbg">
-        <div class="popinfo" id="popinfo">
-        </div>
-    </div>
-
     <nav id="navbar">
         <div class="nav-container">
             <a href="#home" class="logo">
-                <div class="logo-text">Portfolio</div>
+                <div class="logo-text">POLLAWIT K.</div>
             </a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Works</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#timeline">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="th.html">
-                        <img class="langb" src="pngegg.png" />
-                        English
-                    </a></li>
+                <li><a href="#exp">Experience</a></li>
             </ul>
             <div class="mobile-menu-btn" id="mobileMenuBtn">
                 <span></span>
@@ -60,15 +43,11 @@
         <div class="mobile-nav" id="mobileNav">
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Works</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#timeline">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="th.html">
-                        <img class="langb" src="pngegg.png" />
-                        English
-                    </a></li>
+                <li><a href="#exp">Experience</a></li>
             </ul>
         </div>
     </nav>
@@ -82,138 +61,139 @@
             </div>
         </div>
         <div class="hero-content">
-            <h1>Pollawit Kongsiri</h1>
-            <div class="subtitle">Digital Artist & Frontend Web Developer</div>
-        </div>
-    </section>
-
-    <section id="about" class="fade-in">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
+            <h1>PORTFOLIO</h1>
+            <div class="subtitle">3D ARTIST</div>
+            <div class="bannerflex">
+                <div class="bannerfitem">3D MODELING</div>
+                <div class="bannerfitem">3D ENVIRONMENT</div>
+                <div class="bannerfitem">TEXTURING</div>
+                <div class="bannerfitem">GRAPHIC DESIGN</div>
+                <div class="bannerfitem">DIGITAL ILLUSTRATION</div>
             </div>
-
-            <div class="about-content" style="margin-top: -10px; ">
-                <div class="about-intro">
-                    <div class="about-image"></div>
-                    <div class="about-text">
-                        <h3>Pollawit Kongsiri</h3>
-                        <p>I am a versatile digital generalist with a diverse technical background, building responsive
-                            user interfaces through frontend web development and creating high-quality visual content
-                            using both 2D and 3D art techniques. I possess advanced proficiency in Blender and Photoshop
-                            for complex creative projects, complemented by foundational skills in Substance Painter,
-                            Premiere Pro, and AutoCAD. My skillset allows me to handle a wide range of computer-related
-                            tasks, effectively combining coding with professional-grade design to deliver complete
-                            digital solutions.</p>
-                    </div>
-                </div>
+        </div>
+        <div class="bannerbot">
+            <div class="bannerbothead">CONTACT</div>
+            <div class="bannerbotflex">
+                <div class="bannerfitem"><img src="phone.svg" alt="" class="bannericon">+66 65 958 5436</div>
+                <div class="bannerfitem"><img src="mail.svg" alt="" class="bannericon">bosspollawit@gmail.com</div>
+                <div class="bannerfitem"><img src="face.svg" alt="" class="bannericon">Pollawit Kongsiri</div>
+                <div class="bannerfitem"><img src="line.svg" alt="" class="bannericon">bosspollawit123</div>
             </div>
         </div>
     </section>
 
-    <section id="portfolio" class="fade-in" style="margin-top: -50px;">
+
+
+    <section id="portfolio">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Featured Work</h2>
             </div>
 
-            <h2 class="h2artwork">3D Artwork</h2>
-            <div class="portfolio-grid">
-
-                <div class="portfolio-card" onclick="load('3d2'),hidepopbg()">
-                    <div class="portfolio-image threedtwo">
-                        <div class="portfolio-info-overlay">
-                            <span>View Info</span>
-                        </div>
-                    </div>
+            <div class="featured-collage-three">
+                <div class="featured-collage-item">
+                    <img src="3d2_1.png" alt="Featured 3D artwork">
                 </div>
-                <div class="portfolio-card" onclick=" load('3d1'),hidepopbg()">
-                    <div class="portfolio-image threedone">
-                        <div class="portfolio-info-overlay">
-                            <span>View Info</span>
-                        </div>
-                    </div>
+                <div class="featured-collage-item">
+                    <img src="3d2_2.png" alt="Featured 3D artwork">
                 </div>
-                <div class="portfolio-card" onclick="load('3d3'),hidepopbg()">
-                    <div class="portfolio-image threedthree">
-                        <div class="portfolio-info-overlay">
-                            <span>View Info</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-card" onclick="load('3d4'),hidepopbg()">
-                    <div class="portfolio-image threedfour">
-                        <div class="portfolio-info-overlay">
-                            <span>View Info</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-card" onclick="load('3d5'),hidepopbg()">
-                    <div class="portfolio-image threedfive">
-                        <div class="portfolio-info-overlay">
-                            <span>View Info</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-card" onclick="load('3d6'),hidepopbg()">
-                    <div class="portfolio-image threedsix">
-                        <div class="portfolio-info-overlay">
-                            <span>View Info</span>
-                        </div>
+                <div class="featured-collage-item featured-collage-item--main">
+                    <div class="vidcontainer">
+                        <video autoplay muted loop preload="true" id="vid2">
+                            <source src="3.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
             </div>
 
-            <h2 class="h2artwork margintop">2D Artwork</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-card" onclick="load('2d1'),hidepopbg()">
-                    <div class="portfolio-image twodone">
-                        <div class="portfolio-info-overlay">
-                            <span>View Info</span>
-                        </div>
-                    </div>
+            <div class="featured-collage">
+                <div class="featured-collage-item featured-collage-item--main">
+                    <img src="3d1_1.png" alt="Featured 3D artwork">
                 </div>
-                <div class="portfolio-card" onclick="load('2d2'),hidepopbg()">
-                    <div class="portfolio-image twodtwo">
-                        <div class="portfolio-info-overlay">
-                            <span>View Info</span>
-                        </div>
-                    </div>
+                <div class="featured-collage-item">
+                    <img src="3d1_2.jpg" alt="Featured 3D artwork">
                 </div>
-                <div class="portfolio-card" onclick="load('2d3'),hidepopbg()">
-                    <div class="portfolio-image twodthree">
-                        <div class="portfolio-info-overlay">
-                            <span>View Info</span>
-                        </div>
-                    </div>
+                <div class="featured-collage-item">
+                    <img src="3d1_3.jpg" alt="Featured 3D artwork">
                 </div>
             </div>
 
-            <h2 class="h2artwork margintop">Website</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-card" onclick=" window.open('https://culturalmapthailand.info/map');">
-                    <div class="portfolio-image wone">
-                        <div class="portfolio-info-overlay">
-                            <span>Visit Site</span>
-                        </div>
-                    </div>
+            <div class="collage-grid-2">
+                <div class="featured-collage-item">
+                    <img src="3d4_1.jpg" alt="Featured 3D artwork">
                 </div>
-                <div class="portfolio-card" onclick=" window.open('https://wonderingg655.github.io/WebTest/');">
-                    <div class="portfolio-image wtwo">
-                        <div class="portfolio-info-overlay">
-                            <span>Visit Site</span>
-                        </div>
-                    </div>
+                <div class="featured-collage-item">
+                    <img src="3d4_2.jpg" alt="Featured 3D artwork">
                 </div>
             </div>
 
+            <div class="collage-grid-4-main">
+                <div class="featured-collage-item main-left">
+                    <img src="3d3_1.jpg" alt="Featured 3D artwork">
+                </div>
+                <div class="featured-collage-item main-right">
+                    <img src="3d3_2.jpg" alt="Featured 3D artwork">
+                </div>
+                <div class="featured-collage-item sub1">
+                    <img src="3d3_3.jpg" alt="Featured 3D artwork">
+                </div>
+            </div>
+
+            <div class="collage-grid-4-main grid-3d5">
+                <div class="featured-collage-item main-left">
+                    <img src="3d5_1.png" alt="Featured 3D artwork">
+                </div>
+                <div class="featured-collage-item main-right">
+                    <img src="3d5_2.png" alt="Featured 3D artwork">
+                </div>
+                <div class="featured-collage-item sub1">
+                    <img src="3d5_3.png" alt="Featured 3D artwork">
+                </div>
+            </div>
+
+            <h2 class="h2artwork" style="margin-top: 3rem;">Additional Works</h2>
+            <div class="portfolio-grid">
+                <div class="featured-collage-item">
+                    <img src="2d1_1.png" alt="2D artwork">
+                </div>
+                <div class="featured-collage-item">
+                    <img src="2d1.png" alt="2D artwork">
+                </div>
+                <div class="featured-collage-item">
+                    <img src="2d4.png" alt="2D artwork">
+                </div>
+                <div class="featured-collage-item">
+                    <img src="2d3.png" alt="2D artwork">
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="skills" class="fade-in">
+    <section id="about">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Skills & Expertise</h2>
+                <h2 class="section-title">About Me</h2>
+            </div>
+
+            <div class="about-content" style="margin-top: -10px;">
+                <div class="about-intro">
+                    <div class="about-text">
+                        <h3>Pollawit Kongsiri</h3>
+                        <p>With over 2 years of experience as a Freelance 3D Artist, I'm skilled in both 2D and 3D
+                            visual content, including illustrations, graphic design, 3D modeling, texturing, lighting,
+                            and rendering. My experience in both 2D and 3D art allows me to approach creative challenges
+                            from multiple perspectives, combining them to
+                            develop more effective and visually compelling solutions. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills</h2>
             </div>
 
             <div class="skills-container">
@@ -221,10 +201,10 @@
 
                     <div class="skill-item">
                         <h4>3D Creation</h4>
-                        <p style="font-weight: 700;">Blender & Substance Painter</p>
+                        <p><strong>Blender, 3DS Max, V-Ray & Substance Painter</strong></p>
                         <p>I build high-fidelity 3D models and environments, using Substance Painter for realistic PBR
                             texturing and Blender for modeling and rendering.</p>
-                        <p style="margin-top: 0.25rem;">Skill Level: Competent</p>
+                        <span class="skill-level">Competent</span>
                         <div class="skill-progress">
                             <div class="skill-progress-bar" style="width: 75%"></div>
                         </div>
@@ -232,10 +212,10 @@
 
                     <div class="skill-item">
                         <h4>2D Visual</h4>
-                        <p style="font-weight: 700;">Adobe Photoshop</p>
+                        <p><strong>Adobe Photoshop, Adobe Illustrator</strong></p>
                         <p>I handle digital art, illustration, and graphic design, alongside photo retouching and asset
                             post-processing to ensure a polished final look.</p>
-                        <p style="margin-top: 0.25rem;">Skill Level: Competent</p>
+                        <span class="skill-level">Competent</span>
                         <div class="skill-progress">
                             <div class="skill-progress-bar" style="width: 80%"></div>
                         </div>
@@ -243,10 +223,10 @@
 
                     <div class="skill-item">
                         <h4>Video Production</h4>
-                        <p style="font-weight: 700;">Adobe Premiere Pro</p>
+                        <p><strong>Adobe Premiere Pro</strong></p>
                         <p>I edit and assemble video content, focusing on seamless transitions and clear visual
                             storytelling.</p>
-                        <p style="margin-top: 0.25rem;">Skill Level: Basic</p>
+                        <span class="skill-level">Basic</span>
                         <div class="skill-progress">
                             <div class="skill-progress-bar" style="width: 25%"></div>
                         </div>
@@ -254,23 +234,23 @@
 
                     <div class="skill-item">
                         <h4>Technical Drafting</h4>
-                        <p style="font-weight: 700;">AutoCAD</p>
+                        <p><strong>AutoCAD</strong></p>
                         <p>I produce basic technical drawings and layouts for architectural or mechanical requirements.
                         </p>
-                        <p style="margin-top: 0.25rem;">Skill Level: Basic</p>
+                        <span class="skill-level">Basic</span>
                         <div class="skill-progress">
                             <div class="skill-progress-bar" style="width: 30%"></div>
                         </div>
                     </div>
 
-                    <div class="skill-item">
+                    <div class="skill-item skill-item--full">
                         <h4>Frontend Web Development</h4>
-                        <p style="font-weight: 700;">HTML, CSS, JavaScript, PHP, React & React Native</p>
+                        <p><strong>HTML, CSS, JavaScript, PHP, React, React Native & Next.js</strong></p>
                         <p>I build responsive, interactive web interfaces using HTML, CSS, and JavaScript, leveraging
                             React for modern component-based architecture and PHP for essential server-side
                             functionality.
                         </p>
-                        <p style="margin-top: 0.25rem;">Skill Level: Basic</p>
+                        <span class="skill-level">Basic</span>
                         <div class="skill-progress">
                             <div class="skill-progress-bar" style="width: 25%"></div>
                         </div>
@@ -280,112 +260,45 @@
         </div>
     </section>
 
-    <section id="timeline" class="fade-in">
+    <section id="timeline">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Education</h2>
+            </div>
 
-                <div class="timeline-container">
-                    <div class="timeline-line"></div>
-
-
-                    <div class="timeline-item">
-
-                        <div class="timeline-content">
-                            <div class="timeline-year">2020 - 2022</div>
-                            <h3 class="timeline-title">High School Equivalency</h3>
-                            <div class="timeline-company">Kanchanaburi Non-Formal and Informal Education Center</div>
-                            <p class="timeline-description">
-                                Earned my high school equivalency through the GED program, and during my free time, I
-                                dedicated myself to learning both 2D and 3D digital arts. This self-driven study allowed
-                                me to develop a strong foundation for my work as a versatile digital artist.
-                            <div class="timeline-skills">
-                                <span class="timeline-skill">2D Illustration</span>
-                                <span class="timeline-skill">2D Graphic Design</span>
-                                <span class="timeline-skill">3D Hard Surface Modeling</span>
-                                <span class="timeline-skill">3D Environment Design</span>
-                            </div>
-                            <div class="timeline-achievements">
-                                <div class="timeline-achievement">Self-taugth Digital Artist</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-
-                        <div class="timeline-content">
-                            <div class="timeline-year">2022 - 2026</div>
-                            <h3 class="timeline-title">Bachelor’s Degree <br> Computer Education</h3>
-                            <div class="timeline-company">Kanchanaburi Rajabhat University</div>
-                            <p class="timeline-description">
-                                Graduated with First-Class Honors, A program that prepares educators to teach computer
-                                science, digital literacy, and technology integration.
-                            </p>
-                            <div class="timeline-skills">
-                                <span class="timeline-skill">Javascript</span>
-                                <span class="timeline-skill">HTML</span>
-                                <span class="timeline-skill">Mysql</span>
-                                <span class="timeline-skill">CSS</span>
-                            </div>
-                            <div class="timeline-achievements">
-                                <div class="timeline-achievement">Graduated with 3.8 GPA</div>
-                                <div class="timeline-achievement">Led university website programming team to 1st place
-                                </div>
-                                <div class="timeline-achievement">Published research on Computer-Assisted Instruction
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-
-                        <div class="timeline-content">
-                            <div class="timeline-year">2025 - 2026</div>
-                            <h3 class="timeline-title">Teaching Internship</h3>
-                            <div class="timeline-company">Kanchanaburi Municipal 5 School</div>
-                            <p class="timeline-description">
-                                Spent one year teaching upper elementary students at Kanchanaburi Municipal 5 School,
-                                where I developed lesson plans, guided classroom activities, and supported students’
-                                learning in a variety of subjects.
-                            </p>
-                            <div class="timeline-skills">
-                                <span class="timeline-skill">Communication & Instructional</span>
-                                <span class="timeline-skill">Workplace Environment Management</span>
-                            </div>
-                            <div class="timeline-achievements">
-                                <div class="timeline-achievement">Designed and taught lessons in programming and digital
-                                    literacy</div>
-                                <div class="timeline-achievement">Fostered a collaborative and engaging learning
-                                    environment</div>
-                                <div class="timeline-achievement">Homeroom Teacher for Grade 4/1</div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="timeline-container">
+                <div class="timeline-content">
+                    <span class="timeline-year">2022 – 2026</span>
+                    <h3 class="timeline-title">Bachelor’s Degree in Computer Education</h3>
+                    <p class="timeline-achievement">- Graduated with First-Class Honors (GPA: 3.87) <br>
+                        - Focused on 3D modeling, texturing, lighting, rendering, and environment design. <br>
+                        - 1st Place Winner — P.C.N.K. Academic Symposium Website Development
+                        Competition</p>
                 </div>
-            </div>
-    </section>
-
-    <section id="contact">
-        <div class="footer-bottom">
-            <h2 class="section-title">Contact</h2>
-            <div class="citem contactMail">
-                <div><img src="conmail.png" alt="" height="50px" width="50px"></div>
-                <div>E-Mail: BossPollawit@gmail.com</div>
-            </div>
-            <div class="citem contactFacebook">
-                <div><img src="conface.png" alt="" height="50px" width="50px"></div>
-                <div>Facebook: Pollawit Kongsiri</div>
-            </div>
-            <div class="citem contactLine">
-                <div><img src="conline.png" alt="" height="50px" width="50px"></div>
-                <div>Line: bosspollawit123</div>
             </div>
         </div>
     </section>
 
-</body>
+        <section id="timeline">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+            </div>
 
-<script src="js.js"></script>
-<script src="slider.js"></script>
+            <div class="timeline-container">
+                <div class="timeline-content">
+                    <span class="timeline-year">2024 - 2026</span>
+                    <h3 class="timeline-title">Freelance 3D Artist</h3>
+                    <p class="timeline-achievement">- Designed and developed environment assets and scenes using Blender. <br>
+- Created game-ready models with efficient topology, and UV mapping <br>
+- Applied lighting, composition, and rendering techniques to produce visually engaging environments. <br>
+- Optimized assets for performance while maintaining visual fidelity. <br>
+- Worked directly with clients to translate concepts into production-ready 3D content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js.js"></script>
 
 </html>
