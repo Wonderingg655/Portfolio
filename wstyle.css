@@ -121,12 +121,11 @@ nav.scrolled .nav-links a {
 }
 
 .nav-links a:hover {
-    transform: translateY(-2px);
-    background: rgba(204, 204, 204, 0.1);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 nav.scrolled .nav-links a:hover {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.08);
 }
 
 .nav-links a:hover::after {
@@ -135,13 +134,13 @@ nav.scrolled .nav-links a:hover {
 }
 
 .nav-links a.active {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.25);
 }
 
 nav.scrolled .nav-links a.active {
     background: rgba(0, 0, 0, 0.07);
-    border-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0.12);
 }
 
 .nav-links a.active::after {
@@ -271,21 +270,21 @@ nav.scrolled .mobile-nav a {
 }
 
 .mobile-nav a:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.12);
 }
 
 nav.scrolled .mobile-nav a:hover {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.08);
 }
 
 .mobile-nav a.active {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: var(--white-text);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.25);
 }
 
 nav.scrolled .mobile-nav a.active {
-    background: rgba(0, 0, 0, 0.15);
-    border-color: var(--black-text);
+    background: rgba(0, 0, 0, 0.07);
+    border-color: rgba(0, 0, 0, 0.12);
 }
 
 section {
@@ -498,8 +497,8 @@ section {
 }
 
 .skill-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 .skill-item h4 {
@@ -556,8 +555,8 @@ section {
 }
 
 .timeline-content:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 .timeline-year {
@@ -783,7 +782,7 @@ section {
 }
 
 .collage-item-box {
-    border: 3px solid rgba(0, 0, 0, 0.15);
+    border: 3px solid rgba(0, 0, 0, 0.12);
     border-radius: 20px;
     padding: 1.5rem;
     margin-top: 3rem;
@@ -792,9 +791,9 @@ section {
 }
 
 .collage-item-box:hover {
-    border-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
-    transform: translateY(-4px);
+    border-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
 }
 
 .collage-item-box .collage-year {
@@ -804,7 +803,7 @@ section {
     letter-spacing: 0.12em;
     margin-bottom: 1rem;
     color: var(--black-text);
-    border: 1px solid rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 6px;
     padding: 0.35rem 0.8rem;
     display: inline-block;
@@ -875,7 +874,7 @@ section {
 .featured-collage-item {
     overflow: hidden;
     border-radius: 20px;
-    border: 3px solid rgba(0, 0, 0, 0.336);
+    border: 3px solid rgba(0, 0, 0, 0.12);
     min-height: 0;
     position: relative;
     transition: all 0.4s ease;
@@ -906,7 +905,8 @@ section {
 }
 
 .featured-collage-item:hover {
-    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
     cursor: pointer;
 }
 
