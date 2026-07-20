@@ -695,7 +695,7 @@ section {
 
 @media (max-width: 480px) {
     .hero-content {
-        transform: translateY(-4rem);
+        transform: translateY(-5rem);
     }
 
     .container {
