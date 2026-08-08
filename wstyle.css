@@ -13,6 +13,17 @@ html {
 :root {
     --white-text: rgba(255, 255, 255, 0.85);
     --black-text: rgba(0, 0, 0, 0.85);
+    --border-color: rgba(0, 0, 0, 0.2);
+    --border-color-strong: rgba(0, 0, 0, 0.25);
+    --border-color-subtle: rgba(0, 0, 0, 0.18);
+    --border-color-faint: rgba(0, 0, 0, 0.15);
+    --border-color-mid: rgba(0, 0, 0, 0.4);
+    --border-color-dark: rgba(0, 0, 0, 0.6);
+    --border-color-light: rgba(255, 255, 255, 0.1);
+    --border-color-light-mid: rgba(255, 255, 255, 0.5);
+    --border-color-light-active: rgba(255, 255, 255, 0.25);
+    --border-color-light-strong: rgba(255, 255, 255, 0.8);
+    --border-color-loader: #333;
 }
 
 @font-face {
@@ -45,13 +56,13 @@ nav {
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 3px solid var(--border-color-light-mid);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
     color: var(--white-text);
 }
 
 nav.scrolled {
-    border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 3px solid var(--border-color-dark);
     color: var(--black-text);
     background: rgba(255, 255, 255, 0.8);
 }
@@ -135,12 +146,12 @@ nav.scrolled .nav-links a:hover {
 
 .nav-links a.active {
     background: rgba(255, 255, 255, 0.12);
-    border-color: rgba(255, 255, 255, 0.25);
+    border-color: var(--border-color-light-active);
 }
 
 nav.scrolled .nav-links a.active {
     background: rgba(0, 0, 0, 0.07);
-    border-color: rgba(0, 0, 0, 0.12);
+    border-color: var(--border-color);
 }
 
 .nav-links a.active::after {
@@ -228,7 +239,7 @@ nav.scrolled .mobile-menu-btn span {
     background: rgba(0, 0, 0, 0.2);
     transform: translateY(-100%);
     transition: 0.3s ease;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid var(--border-color-light);
     opacity: 0;
     pointer-events: none;
 }
@@ -279,12 +290,12 @@ nav.scrolled .mobile-nav a:hover {
 
 .mobile-nav a.active {
     background: rgba(255, 255, 255, 0.12);
-    border-color: rgba(255, 255, 255, 0.25);
+    border-color: var(--border-color-light-active);
 }
 
 nav.scrolled .mobile-nav a.active {
     background: rgba(0, 0, 0, 0.07);
-    border-color: rgba(0, 0, 0, 0.12);
+    border-color: var(--border-color);
 }
 
 section {
@@ -307,7 +318,7 @@ section {
     font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 700;
     margin-bottom: 1rem;
-    border-bottom: 4px solid rgba(0, 0, 0, 0.336);
+    border-bottom: 4px solid var(--border-color-mid);
     letter-spacing: -1px;
     width: fit-content;
     margin: auto;
@@ -354,7 +365,7 @@ section {
     margin-bottom: 0.5rem;
     letter-spacing: -1px;
     animation: slideInUp 1s ease-out;
-    border-bottom: clamp(2px, 1vw, 8px) solid rgba(255, 255, 255, 0.8);
+    border-bottom: clamp(2px, 1vw, 8px) solid var(--border-color-light-strong);
 }
 
 .hero .subtitle {
@@ -486,7 +497,7 @@ section {
 
 .skill-item {
     background: rgba(0, 0, 0, 0.02);
-    border: 3px solid rgba(0, 0, 0, 0.12);
+    border: 3px solid var(--border-color);
     border-radius: 16px;
     padding: 1.5rem 1.75rem;
     transition: all 0.3s ease;
@@ -497,8 +508,9 @@ section {
 }
 
 .skill-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35);
+    transform: translateY(-4px);
 }
 
 .skill-item h4 {
@@ -547,7 +559,7 @@ section {
 
 .timeline-content {
     background: rgba(0, 0, 0, 0.02);
-    border: 3px solid rgba(0, 0, 0, 0.12);
+    border: 3px solid var(--border-color);
     border-radius: 16px;
     padding: 1.75rem 2rem;
     position: relative;
@@ -555,8 +567,9 @@ section {
 }
 
 .timeline-content:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35);
+    transform: translateY(-4px);
 }
 
 .timeline-year {
@@ -564,10 +577,14 @@ section {
     font-size: 0.95rem;
     font-weight: 600;
     padding: 0.25rem 0.75rem;
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid var(--border-color-strong);
     border-radius: 6px;
     margin-bottom: 0.75rem;
     letter-spacing: 0.02em;
+}
+
+.timeline-year:hover {
+    border-color: rgba(0, 0, 0, 0.05);
 }
 
 .timeline-title {
@@ -580,7 +597,7 @@ section {
     font-size: 1rem;
     margin-top: 0.5rem;
     padding-left: 1rem;
-    border-left: 2px solid rgba(0, 0, 0, 0.15);
+    border-left: 2px solid var(--border-color-strong);
 }
 
 .portfolio-grid {
@@ -593,7 +610,7 @@ section {
 
 .footer-bottom {
     background: linear-gradient(135deg, rgba(49, 49, 49, 0.95) 0%, rgba(0, 0, 0, 0.95) 100%);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid var(--border-color-light);
     margin-top: 4rem;
     width: 100%;
     color: var(--white-text);
@@ -689,7 +706,7 @@ section {
     }
 
     .hero h1 {
-        font-size: clamp(2rem, 7vw, 3.5rem);
+        font-size: clamp(2.5rem, 9vw, 4rem);
     }
 
     .hero .subtitle {
@@ -782,7 +799,7 @@ section {
 }
 
 .collage-item-box {
-    border: 3px solid rgba(0, 0, 0, 0.12);
+    border: 3px solid var(--border-color);
     border-radius: 20px;
     padding: 1.5rem;
     margin-top: 3rem;
@@ -791,39 +808,62 @@ section {
 }
 
 .collage-item-box:hover {
-    border-color: rgba(0, 0, 0, 0.2);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    transform: translateY(-2px);
+    border-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35);
+    transform: translateY(-4px);
+}
+
+.collage-item-box .collage-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.collage-item-box .collage-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--black-text);
 }
 
 .collage-item-box .collage-year {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.12em;
-    margin-bottom: 1rem;
     color: var(--black-text);
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid var(--border-color-subtle);
     border-radius: 6px;
-    padding: 0.35rem 0.8rem;
-    display: inline-block;
+    padding: 0.2rem 0.5rem;
     background: transparent;
+    margin-left: auto;
+}
+
+.collage-item-box .collage-year:hover {
+    border-color: rgba(0, 0, 0, 0.05);
+}
+
+.collage-item-box .collage-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.65);
+    margin-bottom: 1rem;
 }
 
 .collage-item-box .collage-programs {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 1rem;
-    padding-top: 0.8rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    gap: 0.4rem;
+    margin-top: 0.75rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid var(--border-color-faint);
 }
 
 .collage-item-box .collage-programs span {
     font-size: 0.85rem;
     font-weight: 500;
     padding: 0.25rem 0.7rem;
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid var(--border-color-subtle);
     border-radius: 6px;
     background: transparent;
     letter-spacing: 0.03em;
@@ -854,6 +894,17 @@ section {
     margin-bottom: 0;
 }
 
+.portfolio-grid--square {
+    grid-template-columns: 1fr 1fr;
+    cursor: pointer;
+}
+
+.portfolio-grid--square .featured-collage-item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .h2artwork {
     text-align: center;
     color: var(--black-text);
@@ -874,10 +925,9 @@ section {
 .featured-collage-item {
     overflow: hidden;
     border-radius: 20px;
-    border: 3px solid rgba(0, 0, 0, 0.12);
+    border: 4px solid var(--border-color);
     min-height: 0;
     position: relative;
-    transition: all 0.4s ease;
     display: flex;
     flex-direction: column;
 }
@@ -889,29 +939,6 @@ section {
     flex: 1;
     min-height: 0;
     object-fit: cover;
-}
-
-.featured-collage-item::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-}
-
-.featured-collage-item:hover {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    transform: translateY(-2px);
-    cursor: pointer;
-}
-
-.featured-collage-item:hover::after {
-    opacity: 1;
 }
 
 .featured-collage-item--main {
@@ -942,6 +969,10 @@ section {
 
 
 @media (max-width: 768px) {
+    .portfolio-grid {
+        height: 420px;
+    }
+
     .featured-collage {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
@@ -1157,6 +1188,21 @@ section {
     background-color: #555555;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 90;
+    opacity: 8%;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    background-image: url(dots.avif);
+    background-size: cover;
+    background-position: center;
+}
+
 #loader {
     position: fixed;
     top: 0;
@@ -1183,8 +1229,8 @@ section {
 .loader-circle {
     width: 50px;
     height: 50px;
-    border: 3px solid rgba(0, 0, 0, 0.1);
-    border-top: 3px solid #333;
+    border: 3px solid var(--border-color-subtle);
+    border-top: 3px solid var(--border-color-loader);
     border-radius: 50%;
     margin: 0 auto 1rem;
     animation: spin 1s linear infinite;
